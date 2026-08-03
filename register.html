@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daftar – TokoQu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="auth-bg">
+    <div class="auth-container" style="max-width:480px;">
+
+      <!-- Header Logo -->
+      <div class="auth-header">
+        <div class="logo">Toko<span>Qu</span></div>
+        <p>Buat akun baru dan mulai belanja!</p>
+      </div>
+
+      <!-- Form Register -->
+      <div class="auth-body">
+        <h2>Buat Akun Baru</h2>
+
+        <form action="login.html" method="get">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Nama Depan</label>
+              <input type="text" id="fname" placeholder="Budi" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Nama Belakang</label>
+              <input type="text" id="lname" placeholder="Santoso" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="reg-email">Email</label>
+            <input type="email" id="reg-email" placeholder="budi@email.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">No. HP / WhatsApp</label>
+            <input type="tel" id="phone" placeholder="0812-3456-7890" required />
+          </div>
+
+          <div class="form-group">
+            <label for="gender">Jenis Kelamin</label>
+            <select id="gender">
+              <option value="">-- Pilih --</option>
+              <option>Laki-laki</option>
+              <option>Perempuan</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="reg-pass">Password</label>
+            <input type="password" id="reg-pass" placeholder="Minimal 8 karakter" required />
+          </div>
+
+          <div class="form-group">
+            <label for="reg-pass2">Konfirmasi Password</label>
+            <input type="password" id="reg-pass2" placeholder="Ulangi password kamu" required />
+          </div>
+
+          <!-- Syarat & Ketentuan -->
+          <div style="font-size:0.8rem; color:var(--text-light); margin-bottom:14px; line-height:1.5;">
+            Dengan mendaftar, kamu menyetujui
+            <a href="#" style="color:var(--primary);">Syarat &amp; Ketentuan</a>
+            serta
+            <a href="#" style="color:var(--primary);">Kebijakan Privasi</a> TokoQu.
+          </div>
+
+          <button type="submit" class="btn-primary">Daftar Sekarang</button>
+
+        </form>
+
+        <div class="auth-footer">
+          Sudah punya akun? <a href="login.html">Masuk di sini</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

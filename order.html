@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TokoSMKTAG – Belanja Online Terpercaya</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="navbar-logo">Toko<span>SMKTAG</span></div>
+    
+    <div class="navbar-search">
+      <input type="text" placeholder="Cari produk, merek, atau kategori..." />
+      <button>🔍</button>
+    </div>
+
+    <div class="navbar-links">
+      <a href="index.html" class="nav-link"><span class="icon">🏠</span> Beranda</a>
+      <a href="order.html" class="nav-link active"><span class="icon">🛒</span> Pesanan</a>
+      <a href="shipping.html" class="nav-link"><span class="icon">🚚</span> Pengiriman</a>
+      <a href="status.html" class="nav-link"><span class="icon">📋</span> Transaksi</a>
+      <a href="login.html" class="btn-logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <div class="page-header">
+    <div class="breadcrumb"><a href="index.html">Beranda</a> › Pesanan &amp; Pembayaran</div>
+    <h2>🛒 Keranjang &amp; Pemesanan</h2>
+    <p>Periksa kembali pesanan kamu sebelum melanjutkan pembayaran</p>
+  </div>
+
+  <div class="order-wrap">
+
+    <!-- Alert -->
+    <div class="alert alert-warning">
+      ⏰ Selesaikan pembayaran sebelum stok habis! Beberapa item dalam keranjangmu hampir terjual habis.
+    </div>
+
+    <!-- ===== DAFTAR PRODUK ===== -->
+    <div class="order-card">
+      <h3>🏪 Toko ElektronikJaya</h3>
+
+      <div class="order-item">
+        <div class="order-item-img">📱</div>
+        <div class="order-item-info">
+          <div class="order-item-name">Smartphone XPro 5G 256GB RAM 8GB – Hitam</div>
+          <div class="order-item-qty">Variasi: Hitam | Qty: 1</div>
+        </div>
+        <div style="text-align:right;">
+          <div class="order-item-price">Rp 2.925.000</div>
+          <div style="font-size:0.78rem; color:var(--text-light); text-decoration:line-through;">Rp 4.500.000</div>
+        </div>
+      </div>
+
+      <div class="order-item">
+        <div class="order-item-img">🎧</div>
+        <div class="order-item-info">
+          <div class="order-item-name">Headphone Wireless Noise Cancelling – Putih</div>
+          <div class="order-item-qty">Variasi: Putih | Qty: 2</div>
+        </div>
+        <div style="text-align:right;">
+          <div class="order-item-price">Rp 880.000</div>
+          <div style="font-size:0.78rem; color:var(--text-light); text-decoration:line-through;">Rp 1.600.000</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== ALAMAT PENGIRIMAN ===== -->
+    <div class="order-card">
+      <h3>📍 Alamat Pengiriman</h3>
+      <div class="address-box">
+        <p><strong>Budi Santoso</strong> &nbsp;|&nbsp; 0812-3456-7890</p>
+        <p>Jl. Merdeka No. 45, RT 03/RW 07, Kel. Menteng</p>
+        <p>Kec. Menteng, Kota Jakarta Pusat, DKI Jakarta 10310</p>
+        <div style="margin-top:10px;">
+          <a href="#" style="font-size:0.83rem; color:var(--primary); font-weight:600; border:1.5px solid var(--primary); padding:5px 14px; border-radius:5px; display:inline-block;">✏️ Ubah Alamat</a>
+          &nbsp;
+          <a href="#" style="font-size:0.83rem; color:var(--text-light); padding:5px 14px; border-radius:5px; border:1.5px solid var(--border); display:inline-block;">+ Alamat Lain</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== OPSI PENGIRIMAN ===== -->
+    <div class="order-card">
+      <h3>🚚 Pilih Layanan Pengiriman</h3>
+      <div class="payment-options">
+        <div class="payment-opt selected">📦 JNE Regular – Rp 18.000 (3-5 hari)</div>
+        <div class="payment-opt">⚡ JNE Express – Rp 32.000 (1-2 hari)</div>
+        <div class="payment-opt">🏍️ GoSend Same Day – Rp 25.000 (hari ini)</div>
+        <div class="payment-opt">💨 SiCepat – Rp 20.000 (2-3 hari)</div>
+      </div>
+      <div class="alert alert-success" style="margin-top:14px; margin-bottom:0;">
+        ✅ Gratis ongkir untuk pembelian di atas Rp 500.000!
+      </div>
+    </div>
+
+    <!-- ===== METODE PEMBAYARAN ===== -->
+    <div class="order-card">
+      <h3>💳 Metode Pembayaran</h3>
+      <div class="payment-options">
+        <div class="payment-opt selected">🏦 Transfer Bank BCA</div>
+        <div class="payment-opt">💰 GoPay</div>
+        <div class="payment-opt">🔵 OVO</div>
+        <div class="payment-opt">🟣 DANA</div>
+        <div class="payment-opt">💳 Kartu Kredit/Debit</div>
+        <div class="payment-opt">🏪 Bayar di Indomaret</div>
+        <div class="payment-opt">🤝 Bayar di Tempat (COD)</div>
+      </div>
+    </div>
+
+    <!-- ===== VOUCHER ===== -->
+    <div class="order-card">
+      <h3>🎟️ Kode Voucher &amp; Promo</h3>
+      <div style="display:flex; gap:10px;">
+        <input
+          type="text"
+          placeholder="Masukkan kode voucher..."
+          style="flex:1; border:1.5px solid var(--border); border-radius:6px; padding:10px 13px; font-size:0.9rem; outline:none;"
+        />
+        <button class="btn-primary" style="width:auto; padding:10px 20px; margin-top:0;">Pakai</button>
+      </div>
+      <div style="margin-top:12px; display:flex; flex-wrap:wrap; gap:8px;">
+        <span style="background:var(--primary-light); color:var(--primary); font-size:0.78rem; font-weight:700; padding:4px 12px; border-radius:4px; border:1px dashed var(--primary);">TOKOQU10</span>
+        <span style="background:var(--primary-light); color:var(--primary); font-size:0.78rem; font-weight:700; padding:4px 12px; border-radius:4px; border:1px dashed var(--primary);">GRATIS25</span>
+        <span style="background:var(--primary-light); color:var(--primary); font-size:0.78rem; font-weight:700; padding:4px 12px; border-radius:4px; border:1px dashed var(--primary);">NEWUSER50</span>
+      </div>
+    </div>
+
+    <!-- ===== RINGKASAN PEMBAYARAN ===== -->
+    <div class="order-card">
+      <h3>🧾 Ringkasan Pembayaran</h3>
+
+      <div class="order-summary-row">
+        <span>Subtotal Produk (3 item)</span>
+        <span>Rp 3.805.000</span>
+      </div>
+      <div class="order-summary-row">
+        <span>Ongkos Kirim</span>
+        <span style="color:var(--success); font-weight:700;">GRATIS</span>
+      </div>
+      <div class="order-summary-row">
+        <span>Diskon Voucher <strong style="color:var(--primary);">[TOKOQU10]</strong></span>
+        <span style="color:var(--primary);">– Rp 380.500</span>
+      </div>
+      <div class="order-summary-row">
+        <span>Biaya Layanan</span>
+        <span>Rp 2.000</span>
+      </div>
+      <div class="order-summary-row total">
+        <span>Total Pembayaran</span>
+        <span>Rp 3.426.500</span>
+      </div>
+
+      <!-- Tombol Bayar -->
+      <a href="shipping.html" class="btn-primary" style="margin-top:20px; font-size:1.05rem; display:block; text-align:center;">
+        💳 Buat Pesanan &amp; Bayar Sekarang
+      </a>
+
+      <p style="text-align:center; font-size:0.78rem; color:var(--text-light); margin-top:10px;">
+        🔒 Transaksi kamu dilindungi oleh sistem keamanan TokoQu
+      </p>
+    </div>
+
+  </div><!-- /order-wrap -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>🛍️ TokoQu</h4>
+        <li>Tentang Kami</li>
+        <li>Karir</li>
+        <li>Blog</li>
+        <li>Hubungi Kami</li>
+      </div>
+      <div class="footer-col">
+        <h4>Layanan</h4>
+        <li>Pusat Bantuan</li>
+        <li>Cara Belanja</li>
+        <li>Cara Pembayaran</li>
+        <li>Cara Pengiriman</li>
+      </div>
+      <div class="footer-col">
+        <h4>Kebijakan</h4>
+        <li>Syarat &amp; Ketentuan</li>
+        <li>Kebijakan Privasi</li>
+        <li>Kebijakan Pengembalian</li>
+        <li>Program Afiliasi</li>
+      </div>
+      <div class="footer-col">
+        <h4>Ikuti Kami</h4>
+        <li>📘 Facebook</li>
+        <li>📸 Instagram</li>
+        <li>🐦 Twitter / X</li>
+        <li>▶️ YouTube</li>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 TokoQu. Semua hak dilindungi. Dibuat dengan ❤️ di Indonesia.
+    </div>
+  </footer>
+
+</body>
+</html>

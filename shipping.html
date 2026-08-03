@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TokoSMKTAG – Belanja Online Terpercaya</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="navbar-logo">Toko<span>SMKTAG</span></div>
+
+    <div class="navbar-search">
+      <input type="text" placeholder="Cari produk, merek, atau kategori..." />
+      <button>🔍</button>
+    </div>
+
+    <div class="navbar-links">
+      <a href="index.html" class="nav-link"><span class="icon">🏠</span> Beranda</a>
+      <a href="order.html" class="nav-link"><span class="icon">🛒</span> Pesanan</a>
+      <a href="shipping.html" class="nav-link active"><span class="icon">🚚</span> Pengiriman</a>
+      <a href="status.html" class="nav-link"><span class="icon">📋</span> Transaksi</a>
+      <a href="login.html" class="btn-logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <div class="page-header">
+    <div class="breadcrumb"><a href="index.html">Beranda</a> › <a href="status.html">Transaksi</a> › Pengiriman</div>
+    <h2>🚚 Lacak Pengiriman</h2>
+    <p>Pantau posisi paketmu secara real-time</p>
+  </div>
+
+  <div class="shipping-wrap">
+
+    <!-- ===== INFO PESANAN ===== -->
+    <div class="order-card">
+      <h3>📦 Detail Pesanan</h3>
+
+      <div class="order-item">
+        <div class="order-item-img">📱</div>
+        <div class="order-item-info">
+          <div class="order-item-name">Smartphone XPro 5G 256GB RAM 8GB – Hitam</div>
+          <div class="order-item-qty">Qty: 1 &nbsp;|&nbsp; Toko ElektronikJaya</div>
+        </div>
+        <div class="order-item-price">Rp 2.925.000</div>
+      </div>
+
+      <div class="order-item">
+        <div class="order-item-img">🎧</div>
+        <div class="order-item-info">
+          <div class="order-item-name">Headphone Wireless Noise Cancelling – Putih</div>
+          <div class="order-item-qty">Qty: 2 &nbsp;|&nbsp; Toko ElektronikJaya</div>
+        </div>
+        <div class="order-item-price">Rp 880.000</div>
+      </div>
+    </div>
+
+    <!-- ===== NOMOR RESI ===== -->
+    <div class="tracking-id">
+      <div>
+        <span>Nomor Resi Pengiriman</span><br/>
+        <strong>JNE-2025-TQ8847291</strong>
+      </div>
+      <button class="btn-detail" style="border-color:var(--primary); color:var(--primary);">📋 Salin Resi</button>
+    </div>
+
+    <!-- ===== INFO KURIR ===== -->
+    <div class="courier-info">
+      <div class="courier-icon">📦</div>
+      <div class="courier-detail">
+        <h4>JNE Regular</h4>
+        <p>Estimasi tiba: <strong style="color:var(--primary);">Rabu, 22 Mei 2025</strong></p>
+        <p>Layanan: JNE REG | Berat: 1.2 kg</p>
+      </div>
+      <div style="margin-left:auto; text-align:right;">
+        <div style="font-size:0.78rem; color:var(--text-light);">Ongkos Kirim</div>
+        <div style="font-weight:800; color:var(--success); font-size:0.95rem;">GRATIS</div>
+      </div>
+    </div>
+
+    <!-- ===== ALAMAT ===== -->
+    <div class="order-card">
+      <h3>📍 Alamat Pengiriman</h3>
+      <div class="address-box">
+        <p><strong>Budi Santoso</strong> &nbsp;|&nbsp; 0812-3456-7890</p>
+        <p>Jl. Merdeka No. 45, RT 03/RW 07, Kel. Menteng</p>
+        <p>Kec. Menteng, Kota Jakarta Pusat, DKI Jakarta 10310</p>
+      </div>
+    </div>
+
+    <!-- ===== TIMELINE PENGIRIMAN ===== -->
+    <div class="order-card">
+      <h3>📍 Riwayat Perjalanan Paket</h3>
+
+      <!-- Step 1 - Selesai -->
+      <div class="shipping-step">
+        <div class="step-line">
+          <div class="step-dot done">✓</div>
+          <div class="step-connector done"></div>
+        </div>
+        <div class="step-content">
+          <h4>✅ Pesanan Dikonfirmasi</h4>
+          <p>Penjual telah mengkonfirmasi pesananmu dan sedang mempersiapkan paket.</p>
+          <div class="step-time">Senin, 19 Mei 2025 – 09:15 WIB</div>
+        </div>
+      </div>
+
+      <!-- Step 2 - Selesai -->
+      <div class="shipping-step">
+        <div class="step-line">
+          <div class="step-dot done">✓</div>
+          <div class="step-connector done"></div>
+        </div>
+        <div class="step-content">
+          <h4>✅ Paket Diserahkan ke Kurir</h4>
+          <p>Paketmu telah diambil oleh kurir JNE di gudang penjual.</p>
+          <div class="step-time">Senin, 19 Mei 2025 – 14:30 WIB</div>
+        </div>
+      </div>
+
+      <!-- Step 3 - Selesai -->
+      <div class="shipping-step">
+        <div class="step-line">
+          <div class="step-dot done">✓</div>
+          <div class="step-connector done"></div>
+        </div>
+        <div class="step-content">
+          <h4>✅ Paket di Gudang Asal – Jakarta Barat</h4>
+          <p>Paket telah tiba di gudang sortir JNE Jakarta Barat dan sedang diproses.</p>
+          <div class="step-time">Senin, 19 Mei 2025 – 19:45 WIB</div>
+        </div>
+      </div>
+
+      <!-- Step 4 - Aktif -->
+      <div class="shipping-step">
+        <div class="step-line">
+          <div class="step-dot">🚚</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-content">
+          <h4>🚚 Dalam Perjalanan ke Kota Tujuan</h4>
+          <p>Paket sedang dalam pengiriman menuju Jakarta Pusat. Estimasi tiba di gudang tujuan besok pagi.</p>
+          <div class="step-time">Selasa, 20 Mei 2025 – 03:00 WIB &nbsp;(Sedang Berlangsung)</div>
+        </div>
+      </div>
+
+      <!-- Step 5 - Pending -->
+      <div class="shipping-step">
+        <div class="step-line">
+          <div class="step-dot pending">5</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-content">
+          <h4 style="color:var(--text-light);">⏳ Paket di Gudang Tujuan</h4>
+          <p style="color:var(--text-light);">Paket akan tiba di gudang JNE Jakarta Pusat.</p>
+          <div class="step-time" style="color:var(--text-light);">Estimasi: Selasa, 20 Mei 2025</div>
+        </div>
+      </div>
+
+      <!-- Step 6 - Pending -->
+      <div class="shipping-step">
+        <div class="step-line">
+          <div class="step-dot pending">6</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-content">
+          <h4 style="color:var(--text-light);">⏳ Paket dalam Pengantaran</h4>
+          <p style="color:var(--text-light);">Kurir sedang mengantarkan paket ke alamatmu.</p>
+          <div class="step-time" style="color:var(--text-light);">Estimasi: Rabu, 21–22 Mei 2025</div>
+        </div>
+      </div>
+
+      <!-- Step 7 - Pending -->
+      <div class="shipping-step">
+        <div class="step-line">
+          <div class="step-dot pending">7</div>
+          <div class="step-connector" style="display:none;"></div>
+        </div>
+        <div class="step-content">
+          <h4 style="color:var(--text-light);">🏠 Paket Diterima</h4>
+          <p style="color:var(--text-light);">Paket berhasil diterima di alamat tujuan.</p>
+          <div class="step-time" style="color:var(--text-light);">Estimasi: Rabu, 22 Mei 2025</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===== TOMBOL AKSI ===== -->
+    <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:4px;">
+      <a href="status.html" class="btn-detail" style="flex:1; text-align:center; padding:12px;">📋 Lihat Status Transaksi</a>
+      <a href="index.html" class="btn-primary" style="flex:1; text-align:center; margin-top:0; padding:12px;">🛒 Lanjut Belanja</a>
+    </div>
+
+  </div><!-- /shipping-wrap -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>🛍️ TokoQu</h4>
+        <li>Tentang Kami</li>
+        <li>Karir</li>
+        <li>Blog</li>
+        <li>Hubungi Kami</li>
+      </div>
+      <div class="footer-col">
+        <h4>Layanan</h4>
+        <li>Pusat Bantuan</li>
+        <li>Cara Belanja</li>
+        <li>Cara Pembayaran</li>
+        <li>Cara Pengiriman</li>
+      </div>
+      <div class="footer-col">
+        <h4>Kebijakan</h4>
+        <li>Syarat &amp; Ketentuan</li>
+        <li>Kebijakan Privasi</li>
+        <li>Kebijakan Pengembalian</li>
+        <li>Program Afiliasi</li>
+      </div>
+      <div class="footer-col">
+        <h4>Ikuti Kami</h4>
+        <li>📘 Facebook</li>
+        <li>📸 Instagram</li>
+        <li>🐦 Twitter / X</li>
+        <li>▶️ YouTube</li>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 TokoQu. Semua hak dilindungi. Dibuat dengan ❤️ di Indonesia.
+    </div>
+  </footer>
+
+</body>
+</html>

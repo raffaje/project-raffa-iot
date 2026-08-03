@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TokoSMKTAG – Belanja Online Terpercaya</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="navbar-logo">Toko<span>SMKTAG</span></div>
+
+    <div class="navbar-search">
+      <input type="text" placeholder="Cari produk, merek, atau kategori..." />
+      <button>🔍</button>
+    </div>
+
+    <div class="navbar-links">
+      <a href="index.html" class="nav-link"><span class="icon">🏠</span> Beranda</a>
+      <a href="order.html" class="nav-link"><span class="icon">🛒</span> Pesanan</a>
+      <a href="shipping.html" class="nav-link"><span class="icon">🚚</span> Pengiriman</a>
+      <a href="status.html" class="nav-link active"><span class="icon">📋</span> Transaksi</a>
+      <a href="login.html" class="btn-logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <div class="page-header">
+    <div class="breadcrumb"><a href="index.html">Beranda</a> › Status Transaksi</div>
+    <h2>📋 Riwayat Transaksi</h2>
+    <p>Pantau semua pesanan dan status pembayaranmu di sini</p>
+  </div>
+
+  <div class="status-wrap">
+
+    <!-- ===== RINGKASAN STATISTIK ===== -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:12px; margin-bottom:20px;">
+      <div class="order-card" style="margin:0; text-align:center; padding:16px;">
+        <div style="font-size:2rem;">🛒</div>
+        <div style="font-size:1.4rem; font-weight:900; color:var(--primary); font-family:'Nunito',sans-serif;">8</div>
+        <div style="font-size:0.8rem; color:var(--text-light);">Total Pesanan</div>
+      </div>
+      <div class="order-card" style="margin:0; text-align:center; padding:16px;">
+        <div style="font-size:2rem;">✅</div>
+        <div style="font-size:1.4rem; font-weight:900; color:var(--success); font-family:'Nunito',sans-serif;">5</div>
+        <div style="font-size:0.8rem; color:var(--text-light);">Selesai</div>
+      </div>
+      <div class="order-card" style="margin:0; text-align:center; padding:16px;">
+        <div style="font-size:2rem;">🚚</div>
+        <div style="font-size:1.4rem; font-weight:900; color:var(--info); font-family:'Nunito',sans-serif;">2</div>
+        <div style="font-size:0.8rem; color:var(--text-light);">Dikirim</div>
+      </div>
+      <div class="order-card" style="margin:0; text-align:center; padding:16px;">
+        <div style="font-size:2rem;">⏳</div>
+        <div style="font-size:1.4rem; font-weight:900; color:var(--warning); font-family:'Nunito',sans-serif;">1</div>
+        <div style="font-size:0.8rem; color:var(--text-light);">Diproses</div>
+      </div>
+    </div>
+
+    <!-- ===== TABS STATUS ===== -->
+    <div class="status-tabs">
+      <span class="status-tab active">Semua (8)</span>
+      <span class="status-tab">Menunggu Bayar (0)</span>
+      <span class="status-tab">Diproses (1)</span>
+      <span class="status-tab">Dikirim (2)</span>
+      <span class="status-tab">Selesai (5)</span>
+      <span class="status-tab">Dibatalkan (0)</span>
+    </div>
+
+    <!-- ===== TRANSAKSI 1 – DIKIRIM ===== -->
+    <div class="transaction-card">
+      <div class="transaction-head">
+        <div>
+          <div class="shop">🏪 ElektronikJaya</div>
+          <div class="trx-id">No. TRX-2025-TQ8847291 &nbsp;|&nbsp; Senin, 19 Mei 2025</div>
+        </div>
+        <span class="trx-status dikirim">🚚 Dikirim</span>
+      </div>
+      <div class="transaction-body">
+        <div class="trx-item-row">
+          <div class="trx-thumb">📱</div>
+          <div class="trx-item-detail">
+            <div class="name">Smartphone XPro 5G 256GB RAM 8GB – Hitam</div>
+            <div class="qty">1 barang &nbsp;×&nbsp; Rp 2.925.000</div>
+          </div>
+        </div>
+        <div class="trx-item-row">
+          <div class="trx-thumb">🎧</div>
+          <div class="trx-item-detail">
+            <div class="name">Headphone Wireless Noise Cancelling – Putih</div>
+            <div class="qty">2 barang &nbsp;×&nbsp; Rp 440.000</div>
+          </div>
+        </div>
+      </div>
+      <div class="transaction-footer">
+        <div class="trx-total">
+          Total Pesanan: <strong>Rp 3.426.500</strong>
+        </div>
+        <div>
+          <a href="shipping.html" class="btn-detail">🚚 Lacak Paket</a>
+          <a href="#" class="btn-review" style="background:var(--info);">📞 Hubungi Penjual</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== TRANSAKSI 2 – DIPROSES ===== -->
+    <div class="transaction-card">
+      <div class="transaction-head">
+        <div>
+          <div class="shop">🏪 FashionKu Store</div>
+          <div class="trx-id">No. TRX-2025-TQ8831045 &nbsp;|&nbsp; Minggu, 18 Mei 2025</div>
+        </div>
+        <span class="trx-status diproses">⏳ Diproses</span>
+      </div>
+      <div class="transaction-body">
+        <div class="trx-item-row">
+          <div class="trx-thumb">👟</div>
+          <div class="trx-item-detail">
+            <div class="name">Sepatu Sneakers Running Sport – Size 42</div>
+            <div class="qty">1 barang &nbsp;×&nbsp; Rp 485.000</div>
+          </div>
+        </div>
+      </div>
+      <div class="transaction-footer">
+        <div class="trx-total">
+          Total Pesanan: <strong>Rp 485.000</strong>
+        </div>
+        <div>
+          <a href="#" class="btn-detail">📋 Detail</a>
+          <a href="#" class="btn-review" style="background:var(--warning);">⏳ Tunggu Konfirmasi</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== TRANSAKSI 3 – SELESAI ===== -->
+    <div class="transaction-card">
+      <div class="transaction-head">
+        <div>
+          <div class="shop">🏪 GadgetWorld</div>
+          <div class="trx-id">No. TRX-2025-TQ8810293 &nbsp;|&nbsp; Rabu, 14 Mei 2025</div>
+        </div>
+        <span class="trx-status selesai">✅ Selesai</span>
+      </div>
+      <div class="transaction-body">
+        <div class="trx-item-row">
+          <div class="trx-thumb">⌚</div>
+          <div class="trx-item-detail">
+            <div class="name">Smartwatch Pro Series Health Monitor – Hitam</div>
+            <div class="qty">1 barang &nbsp;×&nbsp; Rp 840.000</div>
+          </div>
+        </div>
+        <div class="trx-item-row">
+          <div class="trx-thumb">🔋</div>
+          <div class="trx-item-detail">
+            <div class="name">Power Bank 20000mAh Fast Charging</div>
+            <div class="qty">1 barang &nbsp;×&nbsp; Rp 215.000</div>
+          </div>
+        </div>
+      </div>
+      <div class="transaction-footer">
+        <div class="trx-total">
+          Total Pesanan: <strong>Rp 1.055.000</strong>
+        </div>
+        <div>
+          <a href="#" class="btn-detail">📋 Detail</a>
+          <a href="#" class="btn-review">⭐ Beri Ulasan</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== TRANSAKSI 4 – SELESAI ===== -->
+    <div class="transaction-card">
+      <div class="transaction-head">
+        <div>
+          <div class="shop">🏪 BeautyCorner</div>
+          <div class="trx-id">No. TRX-2025-TQ8798461 &nbsp;|&nbsp; Senin, 12 Mei 2025</div>
+        </div>
+        <span class="trx-status selesai">✅ Selesai</span>
+      </div>
+      <div class="transaction-body">
+        <div class="trx-item-row">
+          <div class="trx-thumb">💄</div>
+          <div class="trx-item-detail">
+            <div class="name">Skincare Set Glowing 5 in 1 BPOM</div>
+            <div class="qty">2 barang &nbsp;×&nbsp; Rp 275.000</div>
+          </div>
+        </div>
+      </div>
+      <div class="transaction-footer">
+        <div class="trx-total">
+          Total Pesanan: <strong>Rp 550.000</strong>
+        </div>
+        <div>
+          <a href="#" class="btn-detail">📋 Detail</a>
+          <a href="#" class="btn-review">⭐ Beri Ulasan</a>
+          <a href="#" class="btn-review" style="background:var(--info); margin-left:8px;">🔄 Beli Lagi</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== TRANSAKSI 5 – SELESAI ===== -->
+    <div class="transaction-card">
+      <div class="transaction-head">
+        <div>
+          <div class="shop">🏪 DapurMandiri</div>
+          <div class="trx-id">No. TRX-2025-TQ8776120 &nbsp;|&nbsp; Jumat, 9 Mei 2025</div>
+        </div>
+        <span class="trx-status selesai">✅ Selesai</span>
+      </div>
+      <div class="transaction-body">
+        <div class="trx-item-row">
+          <div class="trx-thumb">🍳</div>
+          <div class="trx-item-detail">
+            <div class="name">Wajan Anti Lengket Premium 28cm</div>
+            <div class="qty">1 barang &nbsp;×&nbsp; Rp 189.000</div>
+          </div>
+        </div>
+      </div>
+      <div class="transaction-footer">
+        <div class="trx-total">
+          Total Pesanan: <strong>Rp 189.000</strong>
+        </div>
+        <div>
+          <a href="#" class="btn-detail">📋 Detail</a>
+          <a href="#" class="btn-review">⭐ Beri Ulasan</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== TOMBOL LANJUT BELANJA ===== -->
+    <div style="text-align:center; margin-top:24px;">
+      <a href="index.html" class="btn-primary" style="display:inline-block; width:auto; padding:12px 36px; font-size:1rem; margin-top:0;">
+        🛍️ Lanjut Belanja
+      </a>
+    </div>
+
+  </div><!-- /status-wrap -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>🛍️ TokoQu</h4>
+        <li>Tentang Kami</li>
+        <li>Karir</li>
+        <li>Blog</li>
+        <li>Hubungi Kami</li>
+      </div>
+      <div class="footer-col">
+        <h4>Layanan</h4>
+        <li>Pusat Bantuan</li>
+        <li>Cara Belanja</li>
+        <li>Cara Pembayaran</li>
+        <li>Cara Pengiriman</li>
+      </div>
+      <div class="footer-col">
+        <h4>Kebijakan</h4>
+        <li>Syarat &amp; Ketentuan</li>
+        <li>Kebijakan Privasi</li>
+        <li>Kebijakan Pengembalian</li>
+        <li>Program Afiliasi</li>
+      </div>
+      <div class="footer-col">
+        <h4>Ikuti Kami</h4>
+        <li>📘 Facebook</li>
+        <li>📸 Instagram</li>
+        <li>🐦 Twitter / X</li>
+        <li>▶️ YouTube</li>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 TokoQu. Semua hak dilindungi. Dibuat dengan ❤️ di Indonesia.
+    </div>
+  </footer>
+
+</body>
+</html>
